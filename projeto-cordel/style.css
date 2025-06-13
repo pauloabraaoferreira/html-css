@@ -17,7 +17,7 @@ body {
     margin: 0;
 }
 
-body p {
+main p {
     font-family: "Sriracha", cursive;
     font-size: clamp(16px, 7vw, 32px);
     width: 90%;
