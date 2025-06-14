@@ -1,20 +1,24 @@
 @charset "UTF-8";
 
+/* ===== IMPORTAÇÃO DE FONTES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-
-/*
-font-family: "Passion One", sans-serif;
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-/*
-font-family: "Sriracha", cursive;
+/* 
+Fontes usadas:
+- Passion One: "Passion One", sans-serif;
+- Sriracha: "Sriracha", cursive;
 */
 
+/* ===== RESET BÁSICO ===== */
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+/* ===== ESTRUTURA GERAL ===== */
+main {
+    max-width: 100%;
 }
 
 main p {
@@ -25,21 +29,18 @@ main p {
     margin: 180px auto 0 25px;
 }
 
-body>main>section {
+body section {
     border: 1px solid black;
     height: 1000px;
     padding: 10px;
     position: relative;
 }
 
-main {
-    max-width: 100%;
-}
-
 .bloco-menor {
     height: 700px;
 }
 
+/* ===== CABEÇALHO ===== */
 header {
     background-color: #000;
     height: 250px;
@@ -48,73 +49,67 @@ header {
 
 header h1 {
     margin: 0;
+    padding-top: 40px;
+    height: 100px;
     font-family: "Passion One", sans-serif;
     font-size: clamp(48px, 14vw, 68px);
     color: #fff;
-    height: 100px;
-    padding-top: 40px;
 }
 
 header p {
-    color: #fff;
+    margin-top: 20px;
     font-family: "Passion One", sans-serif;
     font-size: clamp(16px, 5vw, 32px);
-    margin-top: 20px;
+    color: #fff;
 }
 
 header a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
 
 header a:hover {
     text-decoration: underline;
-    color: #fff;
 }
 
-div#parallax-1 {
+/* ===== PARALLAX 1 ===== */
+#parallax-1 {
     height: 800px;
-    background-image: url('imagens/background001.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url('imagens/background001.jpg') center center / cover no-repeat fixed;
     background-color: #000;
-    background-attachment: fixed;
     border: 1px solid black;
     position: relative;
 }
 
-div#parallax-1 p {
+#parallax-1 p {
     color: #fff;
-    width: 85%;
     background-color: #00000052;
     padding: 10px;
+    width: 85%;
     max-width: 400px;
     margin: 175px 0 0 clamp(10px, 5vw, 40px);
 }
 
-div#parallax-2 {
+/* ===== PARALLAX 2 ===== */
+#parallax-2 {
     height: 800px;
-    background-image: url('imagens/background002.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url('imagens/background002.jpg') center center / cover no-repeat fixed;
     background-color: #000;
-    background-attachment: fixed;
     border: 1px solid black;
     position: relative;
 }
 
-div#parallax-2 p {
+#parallax-2 p {
     color: #fff;
+    background-color: #00000052;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
-    width: 85%;
-    background-color: #00000052;
     padding: 10px;
+    width: 85%;
     max-width: 400px;
     margin: 175px 0 0 clamp(10px, 5vw, 40px);
 }
 
+/* ===== RODAPÉ ===== */
 footer {
     background-color: #000;
     color: #fff;
