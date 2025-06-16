@@ -89,6 +89,22 @@
     <footer>
         Site criado por <a href="https://github.com/pauloabraaoferreira" target="_blank" rel="noopener noreferrer external">Paulo</a> para meu própio aprendizado
     </footer>
+    <script>
+  // Restaurar rolagem após recarregar
+  window.addEventListener('DOMContentLoaded', () => {
+    const scrollY = localStorage.getItem('scrollY');
+    if (scrollY !== null) {
+      window.scrollTo(0, parseInt(scrollY, 10));
+      localStorage.removeItem('scrollY'); // Limpa depois de usar
+    }
+  });
+
+  // Salvar rolagem antes de recarregar
+  window.addEventListener('beforeunload', () => {
+    localStorage.setItem('scrollY', window.scrollY);
+  });
+</script>
 </body>
+
 
 </html>
